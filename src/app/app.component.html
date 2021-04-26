@@ -1,50 +1,54 @@
-<div class="bg-red-600 p-4 min-h-screen md:flex md:flex-col md:justify-items-center md:space-y-7 xl:flex-row xl:gap-1.5">
-  <h1 class="text-white font-bold w-full text-center mb-2 lg:mb-10 xl:absolute xl:top-5 md:text-3xl"><span class="">Bume</span></h1>
-    <div class="md:text-3xl lg:self-center md:space-y-9 xl:text-2xl">
-      <span class="bg-white text-red-500">Mini Curso Gratuito</span>
-      <div class="mt-2 lg:flex lg:flex-col lg:space-y-16 xl:space-y-16">
-        <p class="text-white font-black text-2xl md:text-5xl lg:text-6xl xl:text-4xl">DOMINANDO O NOVO ALGORITMO DO INSTAGRAM</p>
-        <div class="lg:flex lg:flex-col lg:space-y-14">
-          <p class="text-white font-light md:mt-3">
-            Neste minicurso completo você <span class="font-black">vai aprender absolutamente tudo sobre o algoritmo do instagram</span> e dominar as
-            melhores estratégias para impulsionar os resultados na rede social.
-          </p>
-          <p class="text-white font-light md:mt-3">Os especialistas do Bume vão te ensinar <span class="font-black">desde o que é algoritmo até os melhores hacks para aumentar seu
-          engajamento</span> no canal atravès de tutoriais que você pode colocar em prática hoje mesmo.
-          </p>
+<div class="bg-red-600 grid" style="grid-template-rows: min-content auto">
+  <h1 class="text-white font-bold w-full text-center mb-2 lg:mb-10 md:text-3xl"><span class="">Bume</span></h1>
+  <div class="p-4 min-h-screen md:flex md:flex-col md:justify-items-center md:space-y-7 xl:flex-row xl:gap-1.5">
+    <div class="grid grid-cols-2 gap-3 items-start height-fit">
+      <div class="md:text-3xl md:space-y-9 xl:text-2xl 2xl:flex 2xl:flex-col 2xl:justify-start">
+        <span class="bg-white text-red-500">Mini Curso Gratuito</span>
+        <div class="mt-2 lg:flex lg:flex-col lg:space-y-16 xl:space-y-16 2xl:space-y-16">
+          <p class="text-white font-black text-2xl md:text-5xl lg:text-6xl xl:text-4xl">DOMINANDO O NOVO ALGORITMO DO INSTAGRAM</p>
+          <div class="lg:flex lg:flex-col lg:space-y-14">
+            <p class="text-white font-light md:mt-3">
+              Neste minicurso completo você <span class="font-black">vai aprender absolutamente tudo sobre o algoritmo do instagram</span> e dominar as
+              melhores estratégias para impulsionar os resultados na rede social.
+            </p>
+            <p class="text-white font-light md:mt-3">Os especialistas do Bume vão te ensinar <span class="font-black">desde o que é algoritmo até os melhores hacks para aumentar seu
+        engajamento</span> no canal atravès de tutoriais que você pode colocar em prática hoje mesmo.
+            </p>
+          </div>
         </div>
-
       </div>
-    </div>
-    <div class="bg-pink-500 p-3 text-white mt-2 md:flex md:flex-col md:space-y-12 md:w-3/4 lg:h-3/4
-     rounded-md self-center xl:text-lg xl:self-center">
-      <h1 class="text-center mt-3">Basta preencher os campos</h1>
-      <div class="mb-2">
-        <label for="fname">Nome*</label><br>
-        <input class="w-full lg:p-3" type="text" id="fname" name="fname"><br>
-      </div>
-      <div class="mb-2">
-        <label for="lname">Email*</label><br>
-        <input class="w-full lg:p-3" type="email" id="lname" name="lname">
-      </div>
-      <div class="lg:flex lg:flex-col lg:space-y-4">
-        <span>Você é um agência/freelancer?</span>
+      <div class="bg-pink-500 p-3 text-white md:flex md:flex-col md:space-y-12 rounded-md xl:text-lg">
+        <h1 class="text-center">Basta preencher os campos</h1>
+        <div class="mb-2">
+          <label for="fname">Nome*</label><br>
+          <input class="w-full lg:p-3" type="text" id="fname" name="fname"><br>
+        </div>
+        <div class="mb-2">
+          <label for="lname">Email*</label><br>
+          <input class="w-full lg:p-3" type="email" id="lname" name="lname">
+        </div>
         <div class="lg:flex lg:flex-col lg:space-y-4">
-          <div class="">
-            <input class="" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label class="ml-4" for="vehicle1">Sim</label>
-          </div>
-          <div class="">
-            <input class="" type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
-            <label class="ml-4" for="vehicle2">Não</label>
+          <span>Você é um agência/freelancer?</span>
+          <div class="lg:flex lg:flex-col lg:space-y-4">
+            <div class="">
+              <input class="" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label class="ml-4" for="vehicle1">Sim</label>
+            </div>
+            <div class="">
+              <input class="" type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+              <label class="ml-4" for="vehicle2">Não</label>
+            </div>
           </div>
         </div>
+        <div class="mt-2">
+          <span>5 + 1 = ?</span><br>
+          <input class="w-full lg:p-3 lg:mt-3" type="text">
+        </div>
+        <input class="w-full py-2 bg-blue-500 font-bold mt-3" type="submit" value="QUERO ASSISTIR AS AULAS">
       </div>
-      <div class="mt-2">
-        <span>5 + 1 = ?</span><br>
-        <input class="w-full lg:p-3 lg:mt-3" type="text">
-      </div>
-      <input class="w-full py-2 bg-blue-500 font-bold mt-3" type="submit" value="QUERO ASSISTIR AS AULAS">
     </div>
+
+  </div>
 </div>
+
 <router-outlet></router-outlet>
